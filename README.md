@@ -2,7 +2,7 @@
 
 ## Установка
 ```bash
-pip install
+pip install git+https://github.com/WhatIsLowe/yagptmanager.git
 ```
 <hr>
 
