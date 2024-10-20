@@ -1,0 +1,33 @@
+[build-system]
+requires = ['setuptools', 'wheel']
+build-backend = 'setuptools.build_meta'
+
+[project]
+name = 'yagptmanager'
+version = '1.0.0'
+description = 'YandexGpt API manager'
+authors = [
+    {name = 'Novikov Vladislav', email = 'iam.dev.op.vlad@gmail.com'}
+]
+readme = 'README.md'
+license = {text = 'MIT'}
+classifiers = [
+    'Programming Language :: Python',
+    'Programming Language :: Python :: 3.10',
+    'Programming Language :: Python :: 3.11',
+    'Programming Language :: Python :: 3.12',
+    'Operating System :: OS Independent',
+]
+requires-python = '>=3.10'
+dependencies = [
+    'aiohttp==3.10.10',
+    'cryptography==43.0.3',
+    'emoji==2.14.0',
+    'PyJWT==2.9.0',
+    'pydantic==2.9.2',
+    'redis==5.1.1',
+]
+
+[project.urls]
+Homepage = 'https://github.com/WhatIsLowe/yagptmanager.git'
+Issues = 'https://github.com/WhatIsLowe/yagptmanager/issues'
