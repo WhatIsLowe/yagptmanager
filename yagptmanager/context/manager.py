@@ -69,7 +69,7 @@ class ContextManager(BaseContextManager):
 
         # Преобразует очередь обратно в список словарей и добавляет новое сообщение
         context_list = list(context)
-        context_list.append({"role": new_message.role, "text": new_message.text, "tokens": new_message.tokens})
+        context_list.append(new_message.json())
         # Сохраняет контекст в кэше с TTL в 3600 секунд.
         await self.cache_manager.set(f"context:{session_id}", json.dumps(context_list), ttl=3600)
         logger.debug(f"Контекст для сессии {session_id} обновлен")
