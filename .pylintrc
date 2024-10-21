@@ -1,0 +1,18 @@
+[MASTER]
+# Максимальная длина строки
+max-line-length=120
+
+# Максимальное количество аргументов в функциях и методах
+max-args=15
+
+# Отключение определённых сообщений
+disable=
+    C0304,  # Final newline missing (отсутствие завершающего переноса строки)
+    C0114,  # Missing module docstring (отсутствие строки документации модуля)
+    E0401,  # Unable to import 'module' (невозможность импорта модуля)
+    W1203,  # Use lazy % formatting in logging functions (использование f-строк в логировании)
+    R0903,  # Too few public methods (слишком мало публичных методов)
+    R0902,  # Too many instance attributes (слишком много атрибутов экземпляра)
+    W0707,  # Consider re-raising exceptions with 'from' (отсутствие связывания исключений при повторном выбрасывании)
+    C0411,  # Wrong import order (неправильный порядок импортов)
+    W0611   # Unused import (неиспользуемые импорты)
